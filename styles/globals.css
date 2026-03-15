@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-gradient-to-b from-gray-900 via-gray-900 to-gray-800 text-gray-100 font-sans;
+}
+
+.dropzone-dragover {
+  @apply ring-2 ring-offset-2 ring-primary;
+}
+
+/* Meme text styling: white Impact-like text with black outline */
+.meme-text {
+  font-family: Impact, Haettenschweiler, 'Arial Black', sans-serif;
+  color: #fff;
+  -webkit-text-stroke: 2px #000;
+  text-shadow: 
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000;
+  line-height: 1;
+  pointer-events: auto;
+}
+
+.meme-controls input[type='range'] {
+  accent-color: #7c3aed;
+}
